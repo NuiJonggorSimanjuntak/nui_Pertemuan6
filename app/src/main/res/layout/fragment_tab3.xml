@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tab3Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nui" />
+
+        <RelativeLayout
+            android:id="@+id/relativename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileImage"
+            android:layout_marginTop="55dp"
+            android:paddingVertical="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/nameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nui Jonggor Simanjunta"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativemessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativename"
+            android:paddingVertical="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIM"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/phoneProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="191011400792"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>
